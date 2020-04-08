@@ -1,0 +1,119 @@
+/* Imported links for the fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #062863;
+}
+
+
+/* Styles for the href links on the page */
+body a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+/* General styles for the paragraphs on the page */
+body p {
+  font-family: "Karla", sans-serif;
+  font-size: 0.875rem;
+}
+
+
+/* And now, to the main stuff :-D. All the styles for the main content. */
+body main {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  margin: auto;
+  justify-items: center;
+}
+
+
+/* Logo Styles */
+body main .logo {
+  content: url(https://res.cloudinary.com/dpkreativ/image/upload/v1585749043/piggyvest/piggyvest-logo_fa3iou.svg);
+  margin: auto;
+  margin-top: 2.5rem;
+  grid-column: 5/9;
+}
+
+
+/* Styles for the form */
+body main .form-wrapper {
+  margin: 2.5rem 0;
+  padding: 2.5rem;
+  border-radius: 1.25rem 1.25rem 1.25rem 0;
+  background-color: #fff;
+  grid-row: 2/3;
+  grid-column: 5/9;
+  max-width: 448px;
+  min-width: 250px;
+}
+
+body main .form-wrapper .form-title {
+  text-align: center;
+}
+
+body main .form-wrapper .form-title h1 {
+  color: #083e9e;
+  font-size: 1.2rem;
+}
+
+body main .form-wrapper .form-title p {
+  color: #4a5568;
+}
+
+body main .form-wrapper .form-content form {
+  margin-top: 2rem;
+}
+
+body main .form-wrapper .form-content form label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #4a5568;
+}
+
+body main .form-wrapper .form-content form input {
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #e9eef0;
+  border: none;
+}
+
+body main .form-wrapper .form-content form input::placeholder {
+  font-family: "Karla", sans-serif;
+  color: #9ca7ac;
+}
+
+body main .form-wrapper .form-content form input.submit {
+  background-color: #083e9e;
+  color: #fff;
+  border-radius: 1.25rem 1.25rem 1.25rem 0;
+  font-weight: 700;
+}
+
+body main .form-wrapper .form-content form input.submit:hover {
+  background-color: #062863;
+  cursor: pointer;
+}
+
+
+/* Styles for the login link */
+body main .login-link {
+  grid-row: 3/4;
+  grid-column: 5/9;
+  margin-bottom: 2rem;
+}
